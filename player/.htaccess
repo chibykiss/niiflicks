@@ -1,0 +1,4 @@
+#Turn rewite Engine on
+RewriteEngine on
+#remove single .php for player
+RewriteRule ^play$ play.php [L] #for movie player

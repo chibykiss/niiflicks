@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+}
+.bdy {
+    height: 700px;
+    background: url('../images/nbg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.space {
+    line-height: 9px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+/* .img-fluid{
+    margin: 20px 0px 0px 0px;
+    width: 40%;
+} */
+
+header {
+    margin: 8% 2% 50px 2%;
+}
+
+/* .search {
+    width: 25%;
+    float: right;
+    margin-top: 20px;
+    padding-top: 10%;
+    padding: 0.5rem 2rem;
+} */
+
+.play-store {
+    width: 48%;
+    display: inline;
+    height: 60px;
+}
+
+.main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    height: 100px;
+    border-bottom: 3px solid red;
+}
+
+.card:hover {
+    box-shadow: 0 0.5px 50px 0 rgba(245, 7, 7, 0.959), 0 6px 20px 0 rgba(236, 8, 8, 0.979);
+    transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition-delay: 5ms;
+}
+
+.creator-btn a{
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 3%;
+}
+
+@media only screen and (min-width: 768px) {
+    .bdy {
+        background: url('../images/nbg.jpg');
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+    }
+
+    header {
+        margin: 3% 8%;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 7% 10%;
+    }
+
+    /* .img-fluid{
+        width: 20%;
+    } */
+
+    .play-store {
+        width: 70%;
+        display: inline;
+        height: 50px;
+    }
+
+    .download-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .creator-btn a{
+        color: #fff;
+        text-decoration: none;
+        background-color: red;
+        padding: 10px 40px;
+        border-radius: 3%;
+    }
+
+    .space {
+        padding: 0.3rem;
+    }
+
+    .search {
+        width: 20%;
+        float: right;
+        padding-top: 10%;
+        padding: 0.5rem 2rem;
+    }
+
+    .main .card {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35%;
+        padding: 6rem 3rem;
+        border-radius: 4px;
+        height: 100px;
+        border-bottom: 3px solid red;
+        line-height: 0.4rem;
+    }
+
+    .card:hover {
+        box-shadow: 0 0.5px 50px 0 rgba(245, 7, 7, 0.959), 0 6px 20px 0 rgba(236, 8, 8, 0.979);
+        transition: ease-in;
+        -moz-transition: ease-in;
+        -o-transition: ease-in;
+        transition-delay: 5ms;
+    }
+
+}

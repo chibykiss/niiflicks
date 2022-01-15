@@ -1,0 +1,7 @@
+#Turn rewite Engine on
+RewriteEngine on
+
+#remove play.php
+RewriteRule ^play$ play.php [L] #for movie player
+RewriteRule ^play/([0-9]+)/([0-9]+)/([0-9]+)/([0-9]+) play.php?srid=$1&senid=$2&epdid=$3&seno=$4 [NC,L] #for serie play
+

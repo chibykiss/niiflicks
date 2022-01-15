@@ -1,0 +1,67 @@
+.r_bg {
+    height: 800px;
+    width: 100%;
+    background: url('../images/nbg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.r_card_holder{
+    margin-top: 10% !important;
+    height: 350px;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+.r_space {
+    font-size: 37px;
+}
+.r_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: left;
+    padding: 10rem 2rem !important;
+    height: 100px !important;
+    border-bottom: 3px solid red;
+}
+.r_card_r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    padding: 10rem 2rem !important;
+    height: 100px !important;
+    border-bottom: 3px solid red;
+}
+
+.r_card:hover {
+    box-shadow: 0 0.5px 50px 0 rgba(245, 7, 7, 0.959), 0 6px 20px 0 rgba(236, 8, 8, 0.979);
+    transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition-delay: 5ms;
+}
+.r_card_r:hover {
+    box-shadow: 0 0.5px 50px 0 rgba(245, 7, 7, 0.959), 0 6px 20px 0 rgba(236, 8, 8, 0.979);
+    transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition-delay: 5ms;
+}
+
+.r_play-store {
+    width: 48%;
+    display: inline;
+    height: 60px;
+}
+.r_creator-btn a{
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 3%;
+}

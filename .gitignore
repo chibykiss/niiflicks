@@ -1,0 +1,9 @@
+log.txt
+*.mp4
+*.zip
+niiflicks/
+junk/
+.env
+/vendor
+apis_check/
+env_test.php

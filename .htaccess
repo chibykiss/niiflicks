@@ -1,0 +1,34 @@
+#Turn rewite Engine on
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^http://127.0.0.1/niiflicks.com [NC]
+#RewriteRule ^(.*)$ http://localhost/niiflicks.com/$1 [L,R=301]
+
+#remove .php from all files
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#remove single .php
+RewriteRule ^index$ index.php [L] #for index
+RewriteRule ^premieres$ premieres.php [L] #for premieres
+RewriteRule ^series$ series.php [L] #for series
+RewriteRule ^adverts$ adverts.php [L] #for premieres
+RewriteRule ^register$ register.php [L] #for register
+RewriteRule ^unlock_serie$ unlock_serie.php [L] #for unlock serie
+RewriteRule ^unlock$ unlock.php [L] #for unlock movie
+#rewrite for single.php
+#RewriteRule ^index index.php [NC,L]
+#RewriteRule ^single_vid single_vid.php [NC,L]
+#NC makes the rule non case sensitive
+#L make this rule the last rule that this specific condition will match
+#Rewrite for single.php?id=***&m_name=****
+RewriteRule ^all_premieres/([0-9a-zA-Z_-]+) all_premieres.php?cat=$1 [NC,L] #for all premieres
+RewriteRule ^all_series/([0-9a-zA-Z_-]+) all_series.php?cat=$1 [NC,L] #for all series
+RewriteRule ^series_search/([0-9a-zA-Z_-]+) series_search.php?s_term=$1 [NC,L] #for series search
+RewriteRule ^search/([0-9a-zA-Z_-]+) search.php?m_term=$1 [NC,L] #for movie search
+RewriteRule ^single/([0-9]+)/(.*) single.php?id=$1&m_name=$2 [NC,L] #for single movie
+RewriteRule ^unlock/([0-9]+)/(.*) unlock.php?id=$1&m_name=$2 [NC,L] #for movie unlock
+RewriteRule ^payment_success/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+) payment_success.php?trxref=$1&reference=$2 [NC,L] #for payment success page
+RewriteRule ^unlock_serie/([0-9]+)/(.*)/([0-9]+)/([0-9]+)/([0-9]+) unlock_serie.php?sid=$1&s_name=$2&seaid=$3&seano=$4&epid=$5 [NC,L] #for serie unlock
+RewriteRule ^seasons/([0-9]+)/(.*) seasons.php?id=$1&s_name=$2 [NC,L] #for single season
+RewriteRule ^series_single/([0-9]+)/([0-9]+)/([0-9]+)/(.*) series_single.php?sid=$1&seid=$2&epid=$3&e_name=$4 [NC,L] #for season episode
